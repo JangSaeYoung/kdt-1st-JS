@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  margin: 5rem auto;
+  padding: 3rem 1rem;
+  width: 57rem;
+  background-image: url(../image/checkerPettern.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.todolistBox {
+  margin: auto;
+  width: 50rem;
+  background-color: white;
+  border-radius: 15px;
+}
+
+header {
+  text-align: center;
+  font-size: 30px;
+}
+
+h1 {
+  padding-top: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+}
+
+.form {
+  margin: 10px auto;
+}
+
+input {
+  width: 30rem;
+  height: 3rem;
+  margin-right: 1rem;
+  padding-left: 10px;
+  border-color: black;
+  font-size: 20px;
+}
+
+button {
+  width: 3rem;
+  height: 3rem;
+  border-style: none;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo_list {
+  width: 35rem;
+  margin-top: 20px;
+  margin-left: 80px;
+  list-style: none;
+  font-size: 25px;
+}
+
+.todo_list > li {
+  display: flex;
+  position: relative;
+  padding: 1rem;
+}
+
+.todo_list li .btnCheck {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.todo_list li .btnCheck.on {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url('../image/circle-check-solid.svg');
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.todo_list li .btnDel {
+  position: absolute;
+  top: 15px;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+i {
+  position: absolute;
+  bottom: -3.5rem;
+  left: 26rem;
+  font-size: 70px;
+  color: black;
+  border-radius: 50%;
+  background-color: white;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+i:hover {
+  color: white;
+  background-color: black;
+  left: 25rem;
+}
+
+i:hover::after {
+  content: 'Do It';
+  font-size: 20px;
+}
