@@ -60,6 +60,10 @@ button {
   cursor: pointer;
 }
 
+.todolistBox {
+  margin-bottom: 20px;
+}
+
 .todo_list {
   width: 35rem;
   margin-top: 20px;
@@ -97,7 +101,7 @@ button {
   position: absolute;
   top: 15px;
   bottom: 0;
-  right: 0;
+  right: 7px;
   display: inline-block;
   width: 30px;
   height: 30px;
