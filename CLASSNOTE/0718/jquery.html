@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.js"
+      integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+      crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="./index.css" />
+    <script defer src="./jquery.js"></script>
+  </head>
+  <body>
+    <div style="background-color: skyblue">
+      <h2>7월18일</h2>
+      <span>1234</span>
+      <input type="text" />
+      <input type="text" class="arrt-input" value="attr"/>
+      <input type="button" onclick="showValue()" value="버튼"></button>
+      <div class="number">1234</div>
+      <p class="pororo">뽀로로</p>
+      
+      <ul style="border: 2px solid black; padding:10px; background-color: teal;">
+        <li>1</li>
+        <li>2</li>
+        <li class="me">3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+      
+      <div style=" border: 2px solid black; padding:10px; margin-top:10px; background-color: pink;">
+        <p> children / childNodes</p>
+        <div class="ancestor">
+          <input type="text">
+          <input type="text">
+          <input type="button" value="실험버튼">
+        </div>
+      </div>
+      
+      <h2>실습</h2>
+      <div style="background-color: pink;">
+      <input type="text" class="test-input" />
+      <input type="button" value="출력" class="out-btn" />
+      <input type="button" value="변경" class="change-btn" />
+      <span class="test-span">실습하는 span</span>
+      </div>
+      <!-- 실습 -->
+      <div style="background-color: pink;">
+      <input type="text" class="test2">
+      <input type="button" class="btn2" value="변경1">
+      <input type="button" class="btn3" value="변경2">
+      </div>
+      <!-- 실습 -->
+      <div style="border: 2px solid black; padding:10px; background-color: teal;">
+        <div class="style1" style="width: 100px; height: 100px; "></div>
+        <div class="style2" style="width: 100px; height: 100px; "></div>
+        <input type="button" class="btn-style1" onClick='changeCSS()' value="배경색변경1"/ >
+        <input type="button" class="btn-style2" onClick='changeCSS2() 'value="배경색변경2"/ >
+      </div>
+   <!-- 실습 -->
+      <div style="border: 2px solid black; padding:10px; background-color: pink;"">
+        <ul class="changeUl">
+          <li>고추장</li>
+          <li>된장</li>
+          <li>쌈장</li>
+          <li>초고추장</li>
+        </ul>
+        <input type="text" class="changeInput"/>
+        <input type="button" onClick="changeLi1()" class="changeBtn1" value="버튼1"/>
+        <input type="button" onClick="changeLi2()" class="changeBtn2" value="버튼2"/>
+      </div>
+    </div>
+    <!-- 필기 -->
+    <div class="class-note">
+      <h2>jQuery</h2>
+      <ul>
+        <li>$( 선택자 ).동작함수();</li>
+      </ul>
+    </div>
+  </body>
+</html>
