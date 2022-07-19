@@ -18,6 +18,8 @@ table.addEventListener('click', function (e) {
     dateInput.value = e.target.textContent;
     targetBox = e.target.parentNode;
     // console.log('targetBox는', targetBox);
+  } else if (e.target.tagName === 'DIV') {
+    e.target.remove();
   } else {
     dateInput.value = e.target.firstChild.textContent;
     // console.log(e.target.firstChild.textContent);

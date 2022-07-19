@@ -3,17 +3,17 @@
 // console.log('none) innerText  --> ', getNone.innerText);
 // console.log('none) textContent --> ', getNone.textContent);
 
-// function showNoneHTML() {
-//   alert(getNone.innerHTML);
-// }
+function showNoneHTML() {
+  alert(getNone.innerHTML);
+}
 
-// function showNoneText() {
-//   alert(getNone.innerText);
-// }
+function showNoneText() {
+  alert(getNone.innerText);
+}
 
-// function showNoneContent() {
-//   alert(getNone.textContent);
-// }
+function showNoneContent() {
+  alert(getNone.textContent);
+}
 
 console.log('---------');
 
@@ -22,35 +22,35 @@ console.log('---------');
 // console.log('test) innerText -->  ', getValue.innerText);
 // console.log('test) textContent -->  ', getValue.textContent);
 
-// function showTestHtml() {
-//   alert(getValue.innerHTML);
-// }
+function showTestHtml() {
+  alert(getValue.innerHTML);
+}
 
-// function showTestText() {
-//   alert(getValue.innerText);
-// }
+function showTestText() {
+  alert(getValue.innerText);
+}
 
-// function showTestContent() {
-//   alert(getValue.textContent);
-// }
+function showTestContent() {
+  alert(getValue.textContent);
+}
 console.log('---------');
 
-// const getValue2 = document.querySelector('.test2');
-// console.log('test2) innerHTML --> ', getValue2.innerHTML);
-// console.log('test2) innerText --> ', getValue2.innerText);
-// console.log('test2) textContent --> ', getValue2.innerText);
+const getValue2 = document.querySelector('.test2');
+console.log('test2) innerHTML --> ', getValue2.innerHTML);
+console.log('test2) innerText --> ', getValue2.innerText);
+console.log('test2) textContent --> ', getValue2.innerText);
 
-// function showtextHTML() {
-//   alert(getValue2.innerHTML);
-// }
+function showtextHTML() {
+  alert(getValue2.innerHTML);
+}
 
-// function showtextText() {
-//   alert(getValue2.innerText);
-// }
+function showtextText() {
+  alert(getValue2.innerText);
+}
 
-// function showtextContent() {
-//   alert(getValue2.textContent);
-// }
+function showtextContent() {
+  alert(getValue2.textContent);
+}
 
 console.log('---------');
 
