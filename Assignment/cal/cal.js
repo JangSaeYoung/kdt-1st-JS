@@ -24,12 +24,6 @@ table.addEventListener('click', function (e) {
     targetBox = e.target;
     // console.log(targetBox);
   }
-
-  if (e.target.tagName === 'DIV') {
-    e.target.parentNode.remove();
-
-    dateInput.value = '';
-  }
 });
 
 function writeSchedule() {
