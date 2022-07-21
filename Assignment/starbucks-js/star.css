@@ -1,0 +1,214 @@
+/* COMMON */
+body {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.inner {
+  position: relative;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  background-color: #f6f5ef;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+header > .inner {
+  background-color: #f6f5ef;
+  height: 120px;
+}
+
+header .inner a.logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  height: 75px;
+}
+
+header .inner a.logo img {
+  display: block;
+  /* visibility: hidden; */
+}
+
+header .inner .sub_menu {
+  display: flex;
+  position: absolute;
+  right: 50px;
+  top: 10px;
+}
+
+header .inner .sub_menu .menu {
+  display: flex;
+}
+
+header .inner .sub_menu li {
+  line-height: 32px;
+  /* 폰트크기 + 상하 패딩값 */
+}
+
+header .inner .sub_menu li:not(:last-child)::after {
+  content: "|";
+  font-size: 12px;
+  color: #c8c8c8;
+}
+
+header .inner .sub_menu li a {
+  font-size: 12px;
+  color: #656565;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+header .inner .sub_menu li a:hover {
+  text-decoration: underline;
+}
+
+header .inner .search {
+  position: relative;
+}
+
+header .inner .search input {
+  width: 40px;
+  height: 34px;
+  transition: width 0.4s;
+  font-size: 16px;
+  padding: 0 10px;
+  border: 1px solid#ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+header .inner .search input:focus {
+  width: 182px;
+  /* outline-color: #1e3932; */
+  outline-color: green;
+}
+
+header .inner .search span {
+  position: absolute;
+  font-size: 24px;
+  height: 24px;
+  right: 3px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+header .inner .search span:hover {
+  cursor: pointer;
+}
+
+/* MAIN MENU */
+.main_menu {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* margin: auto; 중앙정렬 아니니깐 필요없음 패딩값있음 */
+  color: #656565;
+}
+
+.main_menu .item {
+}
+
+/* name 으로 가는 건가? */
+.main_menu .item:hover .item__name {
+  background-color: #2c2a29;
+  color: #669900;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.main_menu .item .item__name {
+  padding: 10px 20px 34px 20px;
+  font-size: 13px;
+}
+
+/* .main_menu .item .item__name:hover { */
+/* background-color: #2c2a29;
+  color: #669900; */
+/* hover 시 유지될수 있도록 item 전체에 hover를 준다. */
+/* text-decoration: underline; */
+/* } */
+
+/* ITEM CONTENTS */
+.main_menu .item .item__contents {
+  position: fixed;
+  width: 100%;
+  /* 뷰포트에 기준으로 100% 받기 */
+  left: 0;
+  display: none;
+}
+
+.main_menu .item:hover .item__contents {
+  display: block;
+}
+
+/* MENU */
+
+.main_menu .item .item__contents .item__contents__menu {
+  background-color: #2c2a29;
+  /* height: 500px; */
+  height: 100%;
+}
+
+.main_menu .item .item__contents .item__contents__menu .inner {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  align-content: space-around;
+  /* background-color: red; */
+  height: 100%;
+}
+
+.main_menu .item .item__contents .item__contents__menu .inner > li {
+  width: 200px;
+  /* height: 170px; */
+  height: 100%;
+  padding: 20px 20px 20px 0;
+}
+
+.main_menu .item .item__contents .item__contents__menu .inner > li > a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.main_menu .item .item__contents .item__contents__menu .inner > li > a:hover {
+  cursor: pointer;
+}
+
+.main_menu .item .item__contents .item__contents__menu .inner > li > ul {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.main_menu .item .item__contents .item__contents__menu .inner > li > ul > li {
+  line-height: 25px;
+}
+
+.main_menu
+  .item
+  .item__contents
+  .item__contents__menu
+  .inner
+  > li
+  > ul
+  > li:hover {
+  cursor: pointer;
+}
+
+/* Addtional */
+.main_menu .item .item__contents .item__contents__addtional {
+  background-color: rgb(165, 106, 42);
+  height: 100px;
+}

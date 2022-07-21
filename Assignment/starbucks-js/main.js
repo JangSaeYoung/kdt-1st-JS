@@ -1,33 +1,27 @@
-// alert('뿅');
-
-// SUBMENU > SEARCH
-// 1. 필요한 애들을 불러온다.
+//SEARCH
 const searchEl = document.querySelector('.search');
-const searchInputEl = searchEl.querySelector('input');
-// console.log('searchEl ', searchEl);
-// console.log('searchInputEl ', searchInputEl);
+const inputEl = document.querySelector('input');
 
-// 2. 클릭하면 발생할 일들을 작성한다.
 searchEl.addEventListener('click', function () {
-  searchInputEl.focus();
+  inputEl.focus();
 });
 
-searchInputEl.addEventListener('focus', function () {
-  searchInputEl.setAttribute('placeholder', '통합검색');
+inputEl.addEventListener('focus', function () {
+  inputEl.setAttribute('placeholder', '통합검색');
 });
 
-searchInputEl.addEventListener('blur', function () {
-  searchInputEl.setAttribute('placeholder', '');
+inputEl.addEventListener('blur', function () {
+  inputEl.setAttribute('placeholder', '');
 });
 
-//SWIPER
-//NOTICE >> SWIPER
-const swiperNotice = new Swiper('.notice .notice-line .swiper', {
+//NOTICE - SWIPER
+const swiperNotice = new Swiper('.notice .notice_line .inner__left .swiper', {
   direction: 'vertical',
   loop: true,
   autoplay: true,
 });
 
+//PROMOTION
 const swiperPromotion = new Swiper('.promotion .swiper', {
   direction: 'horizontal',
   slidesPerView: 3,
@@ -35,7 +29,7 @@ const swiperPromotion = new Swiper('.promotion .swiper', {
   centeredSlides: true,
   loop: true,
   autoplay: {
-    delay: 1000,
+    delay: 3000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -48,10 +42,10 @@ const swiperPromotion = new Swiper('.promotion .swiper', {
   },
 });
 
-//SWIPER PROMOTION AUTOPLAY CONTROL
 function controlAutoplay() {
   if (swiperPromotion.autoplay.running) {
     swiperPromotion.autoplay.stop();
+    console.log('멈췄닝');
   } else if (swiperPromotion.autoplay.stop) {
     swiperPromotion.autoplay.start();
   }
@@ -91,7 +85,7 @@ window.addEventListener('scroll', function () {
 
   const peru = document.querySelector('.peru');
   if (scrollYpos > 384) {
-    peru.classList.add('animate');
+    peru.classList.add('animate_peru');
     console.log('페루작동');
   }
 
@@ -102,7 +96,7 @@ window.addEventListener('scroll', function () {
   }
 
   const favorite = document.querySelector('.favorite');
-  if (scrollYpos > 1269) {
+  if (scrollYpos > 1300) {
     favorite.classList.add('animate_fav');
     console.log('fav작동');
   }

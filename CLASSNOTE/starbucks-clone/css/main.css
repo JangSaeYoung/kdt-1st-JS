@@ -371,30 +371,30 @@ header .badges .badge {
   opacity: 0;
 }
 
-.visual .inner:hover .slogan {
+.visual .inner.animate .slogan {
   transition: 0.4s;
   opacity: 1;
 }
 
-.visual .inner:hover .item_1.image {
+.visual .inner.animate .item_1.image {
   transition: 0.4s;
   opacity: 1;
   transition-delay: 0.4s;
 }
 
-.visual .inner:hover .item_2.image {
+.visual .inner.animate .item_2.image {
   transition: 0.4s;
   opacity: 1;
   transition-delay: 0.8s;
 }
 
-.visual .inner:hover .item_3.image {
+.visual .inner.animate .item_3.image {
   transition: 0.3s;
   opacity: 1;
   transition-delay: 1.2s;
 }
 
-.visual .inner:hover .slogan .btn {
+.visual .inner.animate .slogan .btn {
   transition: 0.4s;
   opacity: 1;
   transition-delay: 1.6s;
@@ -516,14 +516,9 @@ header .badges .badge {
   position: absolute;
   height: 600px;
   width: calc(819px * 3 + 20px);
-  /* background-color: orange; */
   left: 50%;
   top: 40px;
   transform: translate(-50%, 0);
-}
-
-.notice .promotion .swiper-wrapper {
-  /* background-color: red; */
 }
 
 .notice .promotion .swiper-wrapper .swiper-slide {
@@ -713,14 +708,14 @@ header .badges .badge {
 .peru .inner .img_product {
   display: block;
   position: absolute;
-  width: 310px;
+  width: 300px;
   top: 70px;
   left: 150px;
-  transform: translate(-700px, 0);
+  transform: translate(-650px, 0);
   opacity: 0;
 }
 
-.peru:hover .inner .img_product {
+.peru.animate .inner .img_product {
   transform: translate(0px, 0);
   opacity: 1;
   transition: 2.5s;
@@ -731,16 +726,16 @@ header .badges .badge {
   top: 160px;
   margin: auto;
   right: 100px;
-  transform: translate(900px, 0);
+  transform: translate(830px, 0);
 }
 
-.peru:hover .inner .peru__contents {
+.peru.animate .inner .peru__contents {
   transform: translate(0px, 0);
   transition: 2.5s;
 }
 
 .peru .inner .peru__contents .img_text {
-  width: 440px;
+  width: 420px;
 }
 
 .peru .inner .peru__contents .btn {
@@ -798,14 +793,14 @@ header .badges .badge {
   opacity: 0;
 }
 
-.indonesia:hover .inner .indonesia__img {
+.indonesia.animate_indonesia .inner .indonesia__img {
   transition: 1.5s;
   opacity: 1;
   transition-delay: 0.8s;
 }
 
-.indonesia:hover::before,
-.indonesia:hover::after {
+.indonesia.animate_indonesia::before,
+.indonesia.animate_indonesia::after {
   opacity: 1;
   transition: 1.5s;
 }
@@ -845,12 +840,12 @@ header .badges .badge {
   transform: translate(-700px);
 }
 
-.favorite:hover .inner .favorite__title_1 {
+.favorite.animate_fav .inner .favorite__title_1 {
   transform: translate(0px);
   transition: 2s;
 }
 
-.favorite:hover .inner .favorite__title_2 {
+.favorite.animate_fav .inner .favorite__title_2 {
   transform: translate(0px);
   transition: 2.5s;
 }
@@ -895,7 +890,7 @@ header .badges .badge {
   transition: 1.5s;
 }
 
-.magazine:hover .inner .magazine__img {
+.magazine.animate_magazine .inner .magazine__img {
   opacity: 1;
 }
 
@@ -941,17 +936,17 @@ header .badges .badge {
   transform: translate(800px, 0);
 }
 
-.store:hover:hover .inner .store__title_1 {
+.store.animate_store .inner .store__title_1 {
   transform: translate(0px, 0);
   transition: 2s;
 }
 
-.store:hover:hover .inner .store__title_2 {
+.store.animate_store .inner .store__title_2 {
   transform: translate(0px, 0);
   transition: 2.5s;
 }
 
-.store:hover:hover .inner .btn.btn--black {
+.store.animate_store .inner .btn.btn--black {
   transform: translate(0px, 0);
   transition: transform 3s;
 }
