@@ -45,7 +45,6 @@ const swiperPromotion = new Swiper('.promotion .swiper', {
 function controlAutoplay() {
   if (swiperPromotion.autoplay.running) {
     swiperPromotion.autoplay.stop();
-    console.log('멈췄닝');
   } else if (swiperPromotion.autoplay.stop) {
     swiperPromotion.autoplay.start();
   }

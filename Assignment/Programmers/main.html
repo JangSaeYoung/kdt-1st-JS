@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프로그래머스</title>
+    <style>
+      * {
+        background-color: #263847;
+        color: white;
+        margin: auto;
+        text-align: center;
+      }
+
+      div {
+        width: 500px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        text-align: center;
+        border: 5px solid black;
+        overflow: hidden;
+      }
+
+      h1 {
+        padding: 40px;
+      }
+
+      h3 {
+        margin: 20px 0;
+      }
+
+      .nonDiv {
+        width: 300px;
+        padding: 10px;
+        margin: 0 100px 0 100px;
+        border: none;
+      }
+
+      input {
+        width: 200px;
+        height: 30px;
+        background-color: #36495d;
+        border: none;
+        border-radius: 5px;
+        font-size: 15px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+
+      .solA {
+        display: none;
+      }
+
+      .show {
+        display: block;
+      }
+
+      .solCShow {
+        padding: 0;
+        margin: 0;
+        width: 500px;
+        height: 500px;
+        background-image: url('../image/없는\ 수\ 더하기.png');
+        background-size: cover;
+      }
+
+      .solDShow {
+        padding: 0;
+        margin: 0;
+        width: 500px;
+        height: 500px;
+        background-image: url('../image/나누어떨.png');
+        background-size: cover;
+      }
+
+      .footer {
+        width: 500px;
+        height: 200px;
+        background-image: url('../image/dabal.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: none;
+        border-bottom: 6px solid black;
+      }
+    </style>
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <h1>🐦 프로그래머스 문제 🐦</h1>
+    <div>
+      <h3>핸드폰 번호 가리기<br />solutionA( )</h3>
+      <input type="text" class="inputNum" placeholder="번호를 입력하세요" />
+      <br />
+      <input type="button" value="결과 보기" onclick="showPhone()" />
+      <div class="nonDiv solA"></div>
+    </div>
+    <div>
+      <h3>자릿수 더하기<br />solutionB( )</h3>
+      <input type="text" class="inputB" placeholder="숫자를 입력하세요" />
+      <br />
+      <input type="button" value="결과 보기" onclick="showPlus()" />
+      <div class="nonDiv solB"></div>
+    </div>
+    <div>
+      <h3>없는 숫자 더하기<br />solutionC( )</h3>
+      <input type="button" value="결과 보기" onclick="showNumber()" />
+      <div class="nonDiv solC"></div>
+    </div>
+    <div>
+      <h3>나누어 떨어지는 숫자 배열<br />solutionD( )</h3>
+      <input type="button" value="결과 보기" onclick="showArray()" />
+      <div class="nonDiv solD"></div>
+    </div>
+    <div class="footer"></div>
+  </body>
+</html>
