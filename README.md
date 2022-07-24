@@ -8,4 +8,4 @@
 
 <h2>Programmers</h2>
 
-![화면 기록 2022-07-24 오후 7 17 19](https://user-images.githubusercontent.com/89016723/180642667-8d5d92c3-8b10-47f0-bdc7-9c43c0c6c38d.gif)
+![화면 기록 2022-07-24 오후 7 17 19](https://user-images.githubusercontent.com/89016723/180642739-26749cd4-4545-46b9-8d0f-9f12add857b8.gif)
